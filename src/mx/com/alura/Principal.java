@@ -15,7 +15,6 @@ import java.util.Scanner;
 public class Principal {
     public static void main(String[] args) {
         DecimalFormat df = new DecimalFormat("#0.00");
-        Double tdcLimite = 0.0d;
         Double saldo = 0.0d;
         List<Producto> productoList = new ArrayList<>();
         int option = 1;
@@ -26,7 +25,7 @@ public class Principal {
             *********************************
             Indicanos el límite de la tarjeta de crédito:
             """);
-        tdcLimite = scanner.nextDouble();
+        Double tdcLimite = scanner.nextDouble();
         while(option == 1){
             Producto producto = new Producto();
             System.out.println("Nombre del producto a comprar: ");

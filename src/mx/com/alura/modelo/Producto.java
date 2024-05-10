@@ -1,15 +1,10 @@
 package mx.com.alura.modelo;
 
 import java.text.DecimalFormat;
-import java.util.Formatter;
 
 public class Producto {
     private String nombre;
     private Double precio;
-
-    public String getNombre() {
-        return nombre;
-    }
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
